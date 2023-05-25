@@ -135,7 +135,7 @@ class ResNet50slim(nn.Module):
         self.inplanes = self.next_inplanes
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
         self.inplanes = self.next_inplanes
-        self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
+        self.layer3 = self._make_layer(block, 192, layers[2], stride=2)
         self.inplanes = self.next_inplanes
 
         self.layer4s = nn.ModuleList([self._make_layer(block, 384, layers[3], stride=2) for _ in range(num_particle)])

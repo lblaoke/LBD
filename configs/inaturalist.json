@@ -28,7 +28,7 @@
         "type": "VariationalE",
         "args": {
             "reweight_epoch": 80,
-            "alpha": 50,
+            "alpha": 100,
             "tau": 20
         }
     },
